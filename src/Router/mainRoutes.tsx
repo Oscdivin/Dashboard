@@ -1,10 +1,12 @@
 import {createBrowserRouter} from "react-router-dom"
 import Layout from "../components/Common/Layout"
 import HomeSceen from "../page/HomeSceen"
-import Form from "../page/Form"
-import SAVED from "../page/SAVED"
-import REPORTS from "../page/REPORTS"
-import FAVORITES from "../page/FAVORITES"
+import REPORTS from "../page/SETTING"
+
+import SETTING from "../page/SETTING"
+import Statistics from "../page/Statistics"
+import Reviews from "../page/Reviews"
+import Products from "../page/Products"
 
 export const mainRouter = createBrowserRouter([{
     element:<Layout/>,
@@ -15,23 +17,23 @@ export const mainRouter = createBrowserRouter([{
         index: true,
     },
     {
-        path:"/form",
-        element:<Form/>,
+        path:"/setting",
+        element:<SETTING/>,
         index: true,
     },
     {
-        path:"/serices",
-        element:<REPORTS/>,
+        path:"/products",
+        element:<Products/>,
         index: true,
     },
     {
-        path:"/Saved",
-        element:<SAVED/>,
+        path:"/reviews",
+        element:<Reviews/>,
         index: true,
     },
     {
-        path:"/Favorites",
-        element:<FAVORITES/>,
+        path:"/statistics",
+        element:<Statistics/>,
         index: true,
     },
     {

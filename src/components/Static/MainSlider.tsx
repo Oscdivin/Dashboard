@@ -13,15 +13,13 @@ const dispatch = useDispatch();
     dispatch(changeState(!toggle));
   };
   return (
-
   <div>
-          <div    className={` h-[100vh] bg-[orange] fixed transition-all duration-300 overflow-hidden z-10  w-[12%] flex justify-center items-center`}
+          <div    className={` h-[100vh] bg-[orange] fixed transition-all duration-300 overflow-hidden z-10
+           w-[12%] flex justify-center items-center`}
         style={{
           width: `${!toggle ? "160px" : "70px"}`,
           transition: "all 350m",
-        }}
-     
-        >
+        }} >
 <div className="w-[90%] h-[95vh] flex flex-col justify-between">
 
 <div className="w-full h-[30px] flex items-center justify-center" >
@@ -33,40 +31,37 @@ const dispatch = useDispatch();
         className="w-full justify-center flex">
           {!toggle ? (
             <BsLayoutSidebarInsetReverse
-              className="text-[25px] text-purple-900 hover:scale-[1.04] hover:cursor-pointer duration-300 transition-all "
+              className="text-[25px] text-gray-200 hover:scale-[1.04] hover:cursor-pointer duration-300 transition-all "
               onClick={onChangeState}
             />
           ) : (
             <BsLayoutSidebarInset
-              className="text-[25px] text-purple-900 hover:scale-[1.04] hover:cursor-pointer duration-300 transition-all "
+              className="text-[25px] text-white hover:scale-[1.04] hover:cursor-pointer duration-300 transition-all "
               onClick={onChangeState}
             />
           )}
         </div>
-
 <div className="w-full h-[420px] flex flex-col" >
-<Link to="/reports">
-</Link>
-{!toggle &&   <span className="w-full h-[50px] bg-[none] 
-text-[#ffff] items-center flex">REPORTS</span>}
-<Link to="/form">
+<Link to="/reviews">
   <span className="w-full h-[50px] bg-[none] 
-text-[#ffff] items-center flex hover:cursor-pointer">Statistics</span>
+text-[#ffff] items-center flex hover:cursor-pointer">Reviews</span>
 </Link>
-<Link to="/Favorites"><span className="w-full h-[50px]
-text-[#ffff] items-center flex">Products</span></Link>
-<Link to="/Saved">
+<Link to="/statistics"><span className="w-full h-[50px]
+text-[#ffff] items-center flex">Statistics</span></Link>
+<Link to="/products">
+
 <span className="w-full h-[50px] bg-[none] 
-text-[#ffff] items-center flex">Reviews</span>
+text-[#ffff] items-center flex">Products</span>
 </Link>
 </div>
 <div className="w-full h-[50px] flex items-center">
+  <Link to="/setting">
 <span className="text-[#fff] text-[13px] flex items-center">SETTING</span>
+  </Link>
 </div>
 </div>
         </div>
   </div>
   )
 }
-
 export default MainSlider
