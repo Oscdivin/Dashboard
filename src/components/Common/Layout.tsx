@@ -2,11 +2,13 @@
 import MainSlider from "../Static/MainSlider"
 import { Outlet } from "react-router-dom";
 import { useSelector } from "react-redux/es/exports";
+import Header from "./Header";
 
 const Layout = () => {
   const toggle = useSelector((state: any) => state.toggleState);
   return (
-      <div>
+    <div className="w-fill h-[100vh]">
+      <Header/>
     <div className="flex">
       <MainSlider />
       <div className="w-[100vw] flex justify-end ">

@@ -4,7 +4,8 @@ import { Link } from "react-router-dom"
 const Header = () => {
   return (
 <div>
-<div className="fixed w-[80.5%] h-[10vh] flex  items-center bg-[#ffff] justify-between">
+<div className="flex items-center justify-center w-[100vh] h-[10vh]">
+<div className="w-[80.5%] h-[10vh] flex  items-center bg-[#ffff] justify-between">
 <div className="flex gap-[15px] w-[33%] items-center justify-center">
 <Link to="/reviews">
     <ul className="text-[#000]">
@@ -34,6 +35,7 @@ SETTING
     <button className="py-[15px] px-[20px] bg-[#000] text-[#fff] rounded-[7px]">LogOut</button>
 </div>
     </div>
+</div>
 </div>
   )
 }
