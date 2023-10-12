@@ -24,7 +24,7 @@ const dispatch = useDispatch();
 
 <div className="w-full h-[30px] flex items-center justify-center" >
     <Link to="/">
-    <span className="text-[#fff] text-[20px] flex items-center">TenDay</span>
+    <span className="text-[#fff] text-[20px] flex items-center">view all</span>
     </Link>
 </div>
 <div 
@@ -42,17 +42,17 @@ const dispatch = useDispatch();
           )}
         </div>
 <div className="w-full h-[420px] flex flex-col" >
-<Link to="/reviews">
-  <span className="w-full h-[50px] bg-[none] 
-text-[#ffff] items-center flex hover:cursor-pointer">Reviews</span>
-</Link>
-<Link to="/statistics"><span className="w-full h-[50px]
-text-[#ffff] items-center flex">Statistics</span></Link>
 <Link to="/products">
 
 <span className="w-full h-[50px] bg-[none] 
-text-[#ffff] items-center flex">Products</span>
+text-[#ffff] items-center flex">Task</span>
 </Link>
+<Link to="/reviews">
+  <span className="w-full h-[50px] bg-[none] 
+text-[#ffff] items-center flex hover:cursor-pointer">
+  progress</span>
+</Link>
+
 </div>
 <div className="w-full h-[50px] flex items-center">
   <Link to="/setting">

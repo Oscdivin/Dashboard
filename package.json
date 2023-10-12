@@ -10,13 +10,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@hookform/resolvers": "^3.3.2",
     "@reduxjs/toolkit": "^1.9.7",
     "@tanstack/react-query": "^4.36.1",
     "@types/simple-peer": "^9.11.6",
     "axios": "^1.5.1",
+    "firebase-tools": "^12.7.0",
+    "jotai": "^2.4.3",
     "react": "^18.2.0",
     "react-content-loader": "^6.2.1",
     "react-dom": "^18.2.0",
+    "react-hook-form": "^7.47.0",
     "react-icons": "^4.11.0",
     "react-loader-spinner": "^5.4.5",
     "react-paystack": "^4.0.3",
@@ -24,7 +28,8 @@
     "react-router-dom": "^6.16.0",
     "redux-persist": "^6.0.0",
     "simple-peer": "^9.11.1",
-    "socket.io-client": "^4.7.2"
+    "socket.io-client": "^4.7.2",
+    "yup": "^1.3.2"
   },
   "devDependencies": {
     "@types/react": "^18.2.15",

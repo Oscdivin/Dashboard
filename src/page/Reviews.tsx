@@ -7,7 +7,7 @@ const Reviews = () => {
        <div className="text-[#000] w-[100px] h-[100px] bg-[orange] rounded-[50%] flex-wrap">
    
    </div>
-   <div className="text-[#000] w-[250px] h-[100px] bg-[orange]">
+   <div className="text-[#000] w-[250px] h-[100px]">
    
    </div>
    </div>

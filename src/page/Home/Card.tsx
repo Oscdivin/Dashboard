@@ -1,6 +1,12 @@
+import React from "react";
+interface iData {
+    title?: string;
+    icon?: boolean;
+    input?: boolean;
+    data?: []
+}
 
-
-const Card = () => {
+const Card: React.FC<iData> = ({}) => {
   return (
 <div>
 <div className="flex gap-10 flex-wrap justify-center items-center w-[100%]  min-h-[100vh]">

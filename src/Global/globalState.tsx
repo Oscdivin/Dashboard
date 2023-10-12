@@ -1,9 +1,23 @@
 import { createSlice } from "@reduxjs/toolkit";
+import React, { useState, createContext, PropsWithChildren } from 'react'
+
+interface iData {
+  globalState?: boolean;
+  setGlobalState?: React.Dispatch<React.SetStateAction<boolean>>
+}
 
 const initialState = {
   toggleState: false,
   cart: [] as any,
 };
+export const contextState = createContext<iData>({})
+
+export const GlobalState: React.FC<PropsWithChildren> = ({ children }) => {
+    const [globalState, setGlobalState] = useState<boolean>(false)
+    return (
+        <contextState.Provider value={{ globalState, setGlobalState }} >{children}</contextState.Provider>
+    )
+}
 
 const globalState = createSlice({
   name: "second",
@@ -43,6 +57,9 @@ const globalState = createSlice({
       }
     },
   },
+
+  
+
 });
 
 export const { changeState, addToCart, remove, removeQTY } =

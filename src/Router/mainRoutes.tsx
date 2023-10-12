@@ -4,7 +4,7 @@ import HomeSceen from "../page/HomeSceen"
 import REPORTS from "../page/SETTING"
 
 import SETTING from "../page/SETTING"
-import Statistics from "../page/Statistics"
+
 import Reviews from "../page/Reviews"
 import Products from "../page/Products"
 
@@ -31,11 +31,7 @@ export const mainRouter = createBrowserRouter([{
         element:<Reviews/>,
         index: true,
     },
-    {
-        path:"/statistics",
-        element:<Statistics/>,
-        index: true,
-    },
+
     {
         path:"/reports",
         element:<REPORTS/>,
